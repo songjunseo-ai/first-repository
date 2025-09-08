@@ -1,25 +1,5 @@
 class Shape:
-    def __init__(self, name = "Unknown"): # 생성자
-        self.name = name
-
-    def SetName(self, name): # 이름 변경
-        self.name = name
-
-    def Print(self): # 정보 출력
-        print(f"이름 : {self.name}")
-
-class Circle(Shape):
-    def __init__(self, x, y, radius, name = "Unknown"): # 생성자
-        super().__init__(name) # Shape.__init__(self, name)
-        self.x = x
-        self.y = y
-        self.radius = radius
-
-    def GetArea(self): # 면적 계산
-        return 3.14 * self.radius ** 2
-
-    def Print(self): # 정보 출력
-        super().Print() # 부모 클래스의 메소드 호출 = Shape.Print(self)
+    def __init__(self, name = "Unknown"): # 생nt() # 부모 클래스의 메소드 호출 = Shape.Print(self)
         print(f"면적 : {self.GetArea()}")
 
 class Rect(Shape):
