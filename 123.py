@@ -1,6 +1,6 @@
 import tkinter as tk
 
-class RectangleDrawer:
+class RectangleDrawer: file file
     def __init__(self, master):
         self.master = master
         self.master.title("그림판 스타일 직사각형 그리기")
